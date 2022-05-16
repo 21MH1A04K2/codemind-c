@@ -1,14 +1,19 @@
 #include<stdio.h>
 int main()
 {
-int num,i,j;
+int num,i,j,k;
 scanf("%d",&num);
-for(i=1;i<=num;i++){
-for(j=1;j<=num;j++){
-if(j==1||i==j||i==num)
-printf("*");else
+for(i=1;i<=num;i++)
+{
+for(k=num-i;k>0;k--)
+{
 printf(" ");
-}printf("
+}
+for(j=1;j<=2*i-1;j++)
+{
+printf("%d",i);
+}
+printf("
 ");
 }
 }
